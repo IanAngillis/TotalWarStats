@@ -1,0 +1,12 @@
+C:\Users\Ian\source\repos\TotalWarStats\TotalWarStats.Data\bin\Debug\netstandard2.0\TotalWarStats.Data.deps.json
+C:\Users\Ian\source\repos\TotalWarStats\TotalWarStats.Data\bin\Debug\netstandard2.0\TotalWarStats.Data.dll
+C:\Users\Ian\source\repos\TotalWarStats\TotalWarStats.Data\bin\Debug\netstandard2.0\TotalWarStats.Data.pdb
+C:\Users\Ian\source\repos\TotalWarStats\TotalWarStats.Data\bin\Debug\netstandard2.0\TotalWarStats.Model.dll
+C:\Users\Ian\source\repos\TotalWarStats\TotalWarStats.Data\bin\Debug\netstandard2.0\TotalWarStats.Model.pdb
+C:\Users\Ian\source\repos\TotalWarStats\TotalWarStats.Data\obj\Debug\netstandard2.0\TotalWarStats.Data.csprojAssemblyReference.cache
+C:\Users\Ian\source\repos\TotalWarStats\TotalWarStats.Data\obj\Debug\netstandard2.0\TotalWarStats.Data.AssemblyInfoInputs.cache
+C:\Users\Ian\source\repos\TotalWarStats\TotalWarStats.Data\obj\Debug\netstandard2.0\TotalWarStats.Data.AssemblyInfo.cs
+C:\Users\Ian\source\repos\TotalWarStats\TotalWarStats.Data\obj\Debug\netstandard2.0\TotalWarStats.Data.csproj.CoreCompileInputs.cache
+C:\Users\Ian\source\repos\TotalWarStats\TotalWarStats.Data\obj\Debug\netstandard2.0\TotalWarStats.Data.csproj.CopyComplete
+C:\Users\Ian\source\repos\TotalWarStats\TotalWarStats.Data\obj\Debug\netstandard2.0\TotalWarStats.Data.dll
+C:\Users\Ian\source\repos\TotalWarStats\TotalWarStats.Data\obj\Debug\netstandard2.0\TotalWarStats.Data.pdb

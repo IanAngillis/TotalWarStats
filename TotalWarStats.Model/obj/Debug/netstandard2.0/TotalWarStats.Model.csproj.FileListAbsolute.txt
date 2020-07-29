@@ -1,0 +1,8 @@
+C:\Users\Ian\source\repos\TotalWarStats\TotalWarStats.Model\bin\Debug\netstandard2.0\TotalWarStats.Model.deps.json
+C:\Users\Ian\source\repos\TotalWarStats\TotalWarStats.Model\bin\Debug\netstandard2.0\TotalWarStats.Model.dll
+C:\Users\Ian\source\repos\TotalWarStats\TotalWarStats.Model\bin\Debug\netstandard2.0\TotalWarStats.Model.pdb
+C:\Users\Ian\source\repos\TotalWarStats\TotalWarStats.Model\obj\Debug\netstandard2.0\TotalWarStats.Model.AssemblyInfoInputs.cache
+C:\Users\Ian\source\repos\TotalWarStats\TotalWarStats.Model\obj\Debug\netstandard2.0\TotalWarStats.Model.AssemblyInfo.cs
+C:\Users\Ian\source\repos\TotalWarStats\TotalWarStats.Model\obj\Debug\netstandard2.0\TotalWarStats.Model.csproj.CoreCompileInputs.cache
+C:\Users\Ian\source\repos\TotalWarStats\TotalWarStats.Model\obj\Debug\netstandard2.0\TotalWarStats.Model.dll
+C:\Users\Ian\source\repos\TotalWarStats\TotalWarStats.Model\obj\Debug\netstandard2.0\TotalWarStats.Model.pdb

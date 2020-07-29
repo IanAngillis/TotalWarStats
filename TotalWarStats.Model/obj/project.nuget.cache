@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "YzlGzLUM2qMZ5XH/w3Ae/j9Enma3f1ImD3wYU9kNCifdqTTqDwDhYX/c5prk8LVGDm++4wrIN5c0c4lYIUomow==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Ian\\source\\repos\\TotalWarStats\\TotalWarStats.Model\\TotalWarStats.Model.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ian\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

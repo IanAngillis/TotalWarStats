@@ -1,0 +1,14 @@
+C:\Users\Ian\source\repos\TotalWarStats\TotalWarStats.Business\bin\Debug\netstandard2.0\TotalWarStats.Business.deps.json
+C:\Users\Ian\source\repos\TotalWarStats\TotalWarStats.Business\bin\Debug\netstandard2.0\TotalWarStats.Business.dll
+C:\Users\Ian\source\repos\TotalWarStats\TotalWarStats.Business\bin\Debug\netstandard2.0\TotalWarStats.Business.pdb
+C:\Users\Ian\source\repos\TotalWarStats\TotalWarStats.Business\bin\Debug\netstandard2.0\TotalWarStats.Data.dll
+C:\Users\Ian\source\repos\TotalWarStats\TotalWarStats.Business\bin\Debug\netstandard2.0\TotalWarStats.Model.dll
+C:\Users\Ian\source\repos\TotalWarStats\TotalWarStats.Business\bin\Debug\netstandard2.0\TotalWarStats.Data.pdb
+C:\Users\Ian\source\repos\TotalWarStats\TotalWarStats.Business\bin\Debug\netstandard2.0\TotalWarStats.Model.pdb
+C:\Users\Ian\source\repos\TotalWarStats\TotalWarStats.Business\obj\Debug\netstandard2.0\TotalWarStats.Business.csprojAssemblyReference.cache
+C:\Users\Ian\source\repos\TotalWarStats\TotalWarStats.Business\obj\Debug\netstandard2.0\TotalWarStats.Business.AssemblyInfoInputs.cache
+C:\Users\Ian\source\repos\TotalWarStats\TotalWarStats.Business\obj\Debug\netstandard2.0\TotalWarStats.Business.AssemblyInfo.cs
+C:\Users\Ian\source\repos\TotalWarStats\TotalWarStats.Business\obj\Debug\netstandard2.0\TotalWarStats.Business.csproj.CoreCompileInputs.cache
+C:\Users\Ian\source\repos\TotalWarStats\TotalWarStats.Business\obj\Debug\netstandard2.0\TotalWarStats.Business.csproj.CopyComplete
+C:\Users\Ian\source\repos\TotalWarStats\TotalWarStats.Business\obj\Debug\netstandard2.0\TotalWarStats.Business.dll
+C:\Users\Ian\source\repos\TotalWarStats\TotalWarStats.Business\obj\Debug\netstandard2.0\TotalWarStats.Business.pdb
