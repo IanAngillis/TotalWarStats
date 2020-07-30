@@ -189,15 +189,49 @@ namespace TotalWarStats.TotalWarStats_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[3];
+            _typeNameTable = new string[20];
             _typeNameTable[0] = "TotalWarStats.MainPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[3] = "TotalWarStats.Views.MatchHistoryView";
+            _typeNameTable[4] = "TotalWarStats.Views.MatchupsView";
+            _typeNameTable[5] = "TotalWarStats.Views.MatchView";
+            _typeNameTable[6] = "System.Collections.Generic.IList`1<String>";
+            _typeNameTable[7] = "String";
+            _typeNameTable[8] = "System.Collections.ObjectModel.ObservableCollection`1<TotalWarStats.Model.Entities.Matchup>";
+            _typeNameTable[9] = "System.Collections.ObjectModel.Collection`1<TotalWarStats.Model.Entities.Matchup>";
+            _typeNameTable[10] = "Object";
+            _typeNameTable[11] = "TotalWarStats.Model.Entities.Matchup";
+            _typeNameTable[12] = "Int32";
+            _typeNameTable[13] = "Double";
+            _typeNameTable[14] = "System.Collections.Generic.IList`1<TotalWarStats.Model.Entities.Match>";
+            _typeNameTable[15] = "TotalWarStats.Model.Entities.Match";
+            _typeNameTable[16] = "Boolean";
+            _typeNameTable[17] = "System.DateTime";
+            _typeNameTable[18] = "System.ValueType";
+            _typeNameTable[19] = "TotalWarStats.Views.SettingsView";
 
-            _typeTable = new global::System.Type[3];
+            _typeTable = new global::System.Type[20];
             _typeTable[0] = typeof(global::TotalWarStats.MainPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[3] = typeof(global::TotalWarStats.Views.MatchHistoryView);
+            _typeTable[4] = typeof(global::TotalWarStats.Views.MatchupsView);
+            _typeTable[5] = typeof(global::TotalWarStats.Views.MatchView);
+            _typeTable[6] = typeof(global::System.Collections.Generic.IList<global::System.String>);
+            _typeTable[7] = typeof(global::System.String);
+            _typeTable[8] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::TotalWarStats.Model.Entities.Matchup>);
+            _typeTable[9] = typeof(global::System.Collections.ObjectModel.Collection<global::TotalWarStats.Model.Entities.Matchup>);
+            _typeTable[10] = typeof(global::System.Object);
+            _typeTable[11] = typeof(global::TotalWarStats.Model.Entities.Matchup);
+            _typeTable[12] = typeof(global::System.Int32);
+            _typeTable[13] = typeof(global::System.Double);
+            _typeTable[14] = typeof(global::System.Collections.Generic.IList<global::TotalWarStats.Model.Entities.Match>);
+            _typeTable[15] = typeof(global::TotalWarStats.Model.Entities.Match);
+            _typeTable[16] = typeof(global::System.Boolean);
+            _typeTable[17] = typeof(global::System.DateTime);
+            _typeTable[18] = typeof(global::System.ValueType);
+            _typeTable[19] = typeof(global::TotalWarStats.Views.SettingsView);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -233,6 +267,38 @@ namespace TotalWarStats.TotalWarStats_XamlTypeInfo
         }
 
         private object Activate_0_MainPage() { return new global::TotalWarStats.MainPage(); }
+        private object Activate_3_MatchHistoryView() { return new global::TotalWarStats.Views.MatchHistoryView(); }
+        private object Activate_4_MatchupsView() { return new global::TotalWarStats.Views.MatchupsView(); }
+        private object Activate_5_MatchView() { return new global::TotalWarStats.Views.MatchView(); }
+        private object Activate_8_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::TotalWarStats.Model.Entities.Matchup>(); }
+        private object Activate_9_Collection() { return new global::System.Collections.ObjectModel.Collection<global::TotalWarStats.Model.Entities.Matchup>(); }
+        private object Activate_11_Matchup() { return new global::TotalWarStats.Model.Entities.Matchup(); }
+        private object Activate_15_Match() { return new global::TotalWarStats.Model.Entities.Match(); }
+        private object Activate_19_SettingsView() { return new global::TotalWarStats.Views.SettingsView(); }
+        private void VectorAdd_6_IList(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::System.String>)instance;
+            var newItem = (global::System.String)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_8_ObservableCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::TotalWarStats.Model.Entities.Matchup>)instance;
+            var newItem = (global::TotalWarStats.Model.Entities.Matchup)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_9_Collection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::TotalWarStats.Model.Entities.Matchup>)instance;
+            var newItem = (global::TotalWarStats.Model.Entities.Matchup)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_14_IList(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::TotalWarStats.Model.Entities.Match>)instance;
+            var newItem = (global::TotalWarStats.Model.Entities.Match)item;
+            collection.Add(newItem);
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -258,16 +324,425 @@ namespace TotalWarStats.TotalWarStats_XamlTypeInfo
             case 2:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
+
+            case 3:   //  TotalWarStats.Views.MatchHistoryView
+                userType = new global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_3_MatchHistoryView;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 4:   //  TotalWarStats.Views.MatchupsView
+                userType = new global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_4_MatchupsView;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 5:   //  TotalWarStats.Views.MatchView
+                userType = new global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_5_MatchView;
+                userType.AddMemberName("MainFactionList");
+                userType.AddMemberName("Matchups");
+                userType.AddMemberName("MatchupsAsString");
+                userType.AddMemberName("WinRate");
+                userType.AddMemberName("Matches");
+                userType.AddMemberName("PlayerFaction");
+                userType.AddMemberName("OpponentFaction");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 6:   //  System.Collections.Generic.IList`1<String>
+                userType = new global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlUserType(this, typeName, type, null);
+                userType.CollectionAdd = VectorAdd_6_IList;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 7:   //  String
+                xamlType = new global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 8:   //  System.Collections.ObjectModel.ObservableCollection`1<TotalWarStats.Model.Entities.Matchup>
+                userType = new global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<TotalWarStats.Model.Entities.Matchup>"));
+                userType.CollectionAdd = VectorAdd_8_ObservableCollection;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 9:   //  System.Collections.ObjectModel.Collection`1<TotalWarStats.Model.Entities.Matchup>
+                userType = new global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_9_Collection;
+                userType.CollectionAdd = VectorAdd_9_Collection;
+                xamlType = userType;
+                break;
+
+            case 10:   //  Object
+                xamlType = new global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 11:   //  TotalWarStats.Model.Entities.Matchup
+                userType = new global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_11_Matchup;
+                userType.AddMemberName("MatchesWon");
+                userType.AddMemberName("MatchesLost");
+                userType.AddMemberName("PlayerFaction");
+                userType.AddMemberName("OpponentFaction");
+                userType.AddMemberName("Winrate");
+                userType.AddMemberName("WinLossesRatio");
+                xamlType = userType;
+                break;
+
+            case 12:   //  Int32
+                xamlType = new global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 13:   //  Double
+                xamlType = new global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 14:   //  System.Collections.Generic.IList`1<TotalWarStats.Model.Entities.Match>
+                userType = new global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlUserType(this, typeName, type, null);
+                userType.CollectionAdd = VectorAdd_14_IList;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 15:   //  TotalWarStats.Model.Entities.Match
+                userType = new global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_15_Match;
+                userType.AddMemberName("MatchId");
+                userType.AddMemberName("PlayerFaction");
+                userType.AddMemberName("OpponentFaction");
+                userType.AddMemberName("HasWon");
+                userType.AddMemberName("Date");
+                xamlType = userType;
+                break;
+
+            case 16:   //  Boolean
+                xamlType = new global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 17:   //  System.DateTime
+                userType = new global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 18:   //  System.ValueType
+                userType = new global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                xamlType = userType;
+                break;
+
+            case 19:   //  TotalWarStats.Views.SettingsView
+                userType = new global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_19_SettingsView;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
             }
             return xamlType;
         }
 
 
+        private object get_0_MatchView_MainFactionList(object instance)
+        {
+            var that = (global::TotalWarStats.Views.MatchView)instance;
+            return that.MainFactionList;
+        }
+        private void set_0_MatchView_MainFactionList(object instance, object Value)
+        {
+            var that = (global::TotalWarStats.Views.MatchView)instance;
+            that.MainFactionList = (global::System.Collections.Generic.IList<global::System.String>)Value;
+        }
+        private object get_1_MatchView_Matchups(object instance)
+        {
+            var that = (global::TotalWarStats.Views.MatchView)instance;
+            return that.Matchups;
+        }
+        private void set_1_MatchView_Matchups(object instance, object Value)
+        {
+            var that = (global::TotalWarStats.Views.MatchView)instance;
+            that.Matchups = (global::System.Collections.ObjectModel.ObservableCollection<global::TotalWarStats.Model.Entities.Matchup>)Value;
+        }
+        private object get_2_Matchup_MatchesWon(object instance)
+        {
+            var that = (global::TotalWarStats.Model.Entities.Matchup)instance;
+            return that.MatchesWon;
+        }
+        private void set_2_Matchup_MatchesWon(object instance, object Value)
+        {
+            var that = (global::TotalWarStats.Model.Entities.Matchup)instance;
+            that.MatchesWon = (global::System.Int32)Value;
+        }
+        private object get_3_Matchup_MatchesLost(object instance)
+        {
+            var that = (global::TotalWarStats.Model.Entities.Matchup)instance;
+            return that.MatchesLost;
+        }
+        private void set_3_Matchup_MatchesLost(object instance, object Value)
+        {
+            var that = (global::TotalWarStats.Model.Entities.Matchup)instance;
+            that.MatchesLost = (global::System.Int32)Value;
+        }
+        private object get_4_Matchup_PlayerFaction(object instance)
+        {
+            var that = (global::TotalWarStats.Model.Entities.Matchup)instance;
+            return that.PlayerFaction;
+        }
+        private void set_4_Matchup_PlayerFaction(object instance, object Value)
+        {
+            var that = (global::TotalWarStats.Model.Entities.Matchup)instance;
+            that.PlayerFaction = (global::System.String)Value;
+        }
+        private object get_5_Matchup_OpponentFaction(object instance)
+        {
+            var that = (global::TotalWarStats.Model.Entities.Matchup)instance;
+            return that.OpponentFaction;
+        }
+        private void set_5_Matchup_OpponentFaction(object instance, object Value)
+        {
+            var that = (global::TotalWarStats.Model.Entities.Matchup)instance;
+            that.OpponentFaction = (global::System.String)Value;
+        }
+        private object get_6_Matchup_Winrate(object instance)
+        {
+            var that = (global::TotalWarStats.Model.Entities.Matchup)instance;
+            return that.Winrate;
+        }
+        private void set_6_Matchup_Winrate(object instance, object Value)
+        {
+            var that = (global::TotalWarStats.Model.Entities.Matchup)instance;
+            that.Winrate = (global::System.Double)Value;
+        }
+        private object get_7_Matchup_WinLossesRatio(object instance)
+        {
+            var that = (global::TotalWarStats.Model.Entities.Matchup)instance;
+            return that.WinLossesRatio;
+        }
+        private void set_7_Matchup_WinLossesRatio(object instance, object Value)
+        {
+            var that = (global::TotalWarStats.Model.Entities.Matchup)instance;
+            that.WinLossesRatio = (global::System.Double)Value;
+        }
+        private object get_8_MatchView_MatchupsAsString(object instance)
+        {
+            var that = (global::TotalWarStats.Views.MatchView)instance;
+            return that.MatchupsAsString;
+        }
+        private void set_8_MatchView_MatchupsAsString(object instance, object Value)
+        {
+            var that = (global::TotalWarStats.Views.MatchView)instance;
+            that.MatchupsAsString = (global::System.String)Value;
+        }
+        private object get_9_MatchView_WinRate(object instance)
+        {
+            var that = (global::TotalWarStats.Views.MatchView)instance;
+            return that.WinRate;
+        }
+        private void set_9_MatchView_WinRate(object instance, object Value)
+        {
+            var that = (global::TotalWarStats.Views.MatchView)instance;
+            that.WinRate = (global::System.Double)Value;
+        }
+        private object get_10_MatchView_Matches(object instance)
+        {
+            var that = (global::TotalWarStats.Views.MatchView)instance;
+            return that.Matches;
+        }
+        private void set_10_MatchView_Matches(object instance, object Value)
+        {
+            var that = (global::TotalWarStats.Views.MatchView)instance;
+            that.Matches = (global::System.Collections.Generic.IList<global::TotalWarStats.Model.Entities.Match>)Value;
+        }
+        private object get_11_Match_MatchId(object instance)
+        {
+            var that = (global::TotalWarStats.Model.Entities.Match)instance;
+            return that.MatchId;
+        }
+        private void set_11_Match_MatchId(object instance, object Value)
+        {
+            var that = (global::TotalWarStats.Model.Entities.Match)instance;
+            that.MatchId = (global::System.String)Value;
+        }
+        private object get_12_Match_PlayerFaction(object instance)
+        {
+            var that = (global::TotalWarStats.Model.Entities.Match)instance;
+            return that.PlayerFaction;
+        }
+        private void set_12_Match_PlayerFaction(object instance, object Value)
+        {
+            var that = (global::TotalWarStats.Model.Entities.Match)instance;
+            that.PlayerFaction = (global::System.String)Value;
+        }
+        private object get_13_Match_OpponentFaction(object instance)
+        {
+            var that = (global::TotalWarStats.Model.Entities.Match)instance;
+            return that.OpponentFaction;
+        }
+        private void set_13_Match_OpponentFaction(object instance, object Value)
+        {
+            var that = (global::TotalWarStats.Model.Entities.Match)instance;
+            that.OpponentFaction = (global::System.String)Value;
+        }
+        private object get_14_Match_HasWon(object instance)
+        {
+            var that = (global::TotalWarStats.Model.Entities.Match)instance;
+            return that.HasWon;
+        }
+        private void set_14_Match_HasWon(object instance, object Value)
+        {
+            var that = (global::TotalWarStats.Model.Entities.Match)instance;
+            that.HasWon = (global::System.Boolean)Value;
+        }
+        private object get_15_Match_Date(object instance)
+        {
+            var that = (global::TotalWarStats.Model.Entities.Match)instance;
+            return that.Date;
+        }
+        private void set_15_Match_Date(object instance, object Value)
+        {
+            var that = (global::TotalWarStats.Model.Entities.Match)instance;
+            that.Date = (global::System.DateTime)Value;
+        }
+        private object get_16_MatchView_PlayerFaction(object instance)
+        {
+            var that = (global::TotalWarStats.Views.MatchView)instance;
+            return that.PlayerFaction;
+        }
+        private void set_16_MatchView_PlayerFaction(object instance, object Value)
+        {
+            var that = (global::TotalWarStats.Views.MatchView)instance;
+            that.PlayerFaction = (global::System.String)Value;
+        }
+        private object get_17_MatchView_OpponentFaction(object instance)
+        {
+            var that = (global::TotalWarStats.Views.MatchView)instance;
+            return that.OpponentFaction;
+        }
+        private void set_17_MatchView_OpponentFaction(object instance, object Value)
+        {
+            var that = (global::TotalWarStats.Views.MatchView)instance;
+            that.OpponentFaction = (global::System.String)Value;
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
             global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlMember xamlMember = null;
-            // No Local Properties
+            global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlUserType userType;
+
+            switch (longMemberName)
+            {
+            case "TotalWarStats.Views.MatchView.MainFactionList":
+                userType = (global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TotalWarStats.Views.MatchView");
+                xamlMember = new global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlMember(this, "MainFactionList", "System.Collections.Generic.IList`1<String>");
+                xamlMember.Getter = get_0_MatchView_MainFactionList;
+                xamlMember.Setter = set_0_MatchView_MainFactionList;
+                break;
+            case "TotalWarStats.Views.MatchView.Matchups":
+                userType = (global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TotalWarStats.Views.MatchView");
+                xamlMember = new global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlMember(this, "Matchups", "System.Collections.ObjectModel.ObservableCollection`1<TotalWarStats.Model.Entities.Matchup>");
+                xamlMember.Getter = get_1_MatchView_Matchups;
+                xamlMember.Setter = set_1_MatchView_Matchups;
+                break;
+            case "TotalWarStats.Model.Entities.Matchup.MatchesWon":
+                userType = (global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TotalWarStats.Model.Entities.Matchup");
+                xamlMember = new global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlMember(this, "MatchesWon", "Int32");
+                xamlMember.Getter = get_2_Matchup_MatchesWon;
+                xamlMember.Setter = set_2_Matchup_MatchesWon;
+                break;
+            case "TotalWarStats.Model.Entities.Matchup.MatchesLost":
+                userType = (global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TotalWarStats.Model.Entities.Matchup");
+                xamlMember = new global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlMember(this, "MatchesLost", "Int32");
+                xamlMember.Getter = get_3_Matchup_MatchesLost;
+                xamlMember.Setter = set_3_Matchup_MatchesLost;
+                break;
+            case "TotalWarStats.Model.Entities.Matchup.PlayerFaction":
+                userType = (global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TotalWarStats.Model.Entities.Matchup");
+                xamlMember = new global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlMember(this, "PlayerFaction", "String");
+                xamlMember.Getter = get_4_Matchup_PlayerFaction;
+                xamlMember.Setter = set_4_Matchup_PlayerFaction;
+                break;
+            case "TotalWarStats.Model.Entities.Matchup.OpponentFaction":
+                userType = (global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TotalWarStats.Model.Entities.Matchup");
+                xamlMember = new global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlMember(this, "OpponentFaction", "String");
+                xamlMember.Getter = get_5_Matchup_OpponentFaction;
+                xamlMember.Setter = set_5_Matchup_OpponentFaction;
+                break;
+            case "TotalWarStats.Model.Entities.Matchup.Winrate":
+                userType = (global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TotalWarStats.Model.Entities.Matchup");
+                xamlMember = new global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlMember(this, "Winrate", "Double");
+                xamlMember.Getter = get_6_Matchup_Winrate;
+                xamlMember.Setter = set_6_Matchup_Winrate;
+                break;
+            case "TotalWarStats.Model.Entities.Matchup.WinLossesRatio":
+                userType = (global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TotalWarStats.Model.Entities.Matchup");
+                xamlMember = new global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlMember(this, "WinLossesRatio", "Double");
+                xamlMember.Getter = get_7_Matchup_WinLossesRatio;
+                xamlMember.Setter = set_7_Matchup_WinLossesRatio;
+                break;
+            case "TotalWarStats.Views.MatchView.MatchupsAsString":
+                userType = (global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TotalWarStats.Views.MatchView");
+                xamlMember = new global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlMember(this, "MatchupsAsString", "String");
+                xamlMember.Getter = get_8_MatchView_MatchupsAsString;
+                xamlMember.Setter = set_8_MatchView_MatchupsAsString;
+                break;
+            case "TotalWarStats.Views.MatchView.WinRate":
+                userType = (global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TotalWarStats.Views.MatchView");
+                xamlMember = new global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlMember(this, "WinRate", "Double");
+                xamlMember.Getter = get_9_MatchView_WinRate;
+                xamlMember.Setter = set_9_MatchView_WinRate;
+                break;
+            case "TotalWarStats.Views.MatchView.Matches":
+                userType = (global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TotalWarStats.Views.MatchView");
+                xamlMember = new global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlMember(this, "Matches", "System.Collections.Generic.IList`1<TotalWarStats.Model.Entities.Match>");
+                xamlMember.Getter = get_10_MatchView_Matches;
+                xamlMember.Setter = set_10_MatchView_Matches;
+                break;
+            case "TotalWarStats.Model.Entities.Match.MatchId":
+                userType = (global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TotalWarStats.Model.Entities.Match");
+                xamlMember = new global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlMember(this, "MatchId", "String");
+                xamlMember.Getter = get_11_Match_MatchId;
+                xamlMember.Setter = set_11_Match_MatchId;
+                break;
+            case "TotalWarStats.Model.Entities.Match.PlayerFaction":
+                userType = (global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TotalWarStats.Model.Entities.Match");
+                xamlMember = new global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlMember(this, "PlayerFaction", "String");
+                xamlMember.Getter = get_12_Match_PlayerFaction;
+                xamlMember.Setter = set_12_Match_PlayerFaction;
+                break;
+            case "TotalWarStats.Model.Entities.Match.OpponentFaction":
+                userType = (global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TotalWarStats.Model.Entities.Match");
+                xamlMember = new global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlMember(this, "OpponentFaction", "String");
+                xamlMember.Getter = get_13_Match_OpponentFaction;
+                xamlMember.Setter = set_13_Match_OpponentFaction;
+                break;
+            case "TotalWarStats.Model.Entities.Match.HasWon":
+                userType = (global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TotalWarStats.Model.Entities.Match");
+                xamlMember = new global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlMember(this, "HasWon", "Boolean");
+                xamlMember.Getter = get_14_Match_HasWon;
+                xamlMember.Setter = set_14_Match_HasWon;
+                break;
+            case "TotalWarStats.Model.Entities.Match.Date":
+                userType = (global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TotalWarStats.Model.Entities.Match");
+                xamlMember = new global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlMember(this, "Date", "System.DateTime");
+                xamlMember.Getter = get_15_Match_Date;
+                xamlMember.Setter = set_15_Match_Date;
+                break;
+            case "TotalWarStats.Views.MatchView.PlayerFaction":
+                userType = (global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TotalWarStats.Views.MatchView");
+                xamlMember = new global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlMember(this, "PlayerFaction", "String");
+                xamlMember.Getter = get_16_MatchView_PlayerFaction;
+                xamlMember.Setter = set_16_MatchView_PlayerFaction;
+                break;
+            case "TotalWarStats.Views.MatchView.OpponentFaction":
+                userType = (global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TotalWarStats.Views.MatchView");
+                xamlMember = new global::TotalWarStats.TotalWarStats_XamlTypeInfo.XamlMember(this, "OpponentFaction", "String");
+                xamlMember.Getter = get_17_MatchView_OpponentFaction;
+                xamlMember.Setter = set_17_MatchView_OpponentFaction;
+                break;
+            }
             return xamlMember;
         }
     }

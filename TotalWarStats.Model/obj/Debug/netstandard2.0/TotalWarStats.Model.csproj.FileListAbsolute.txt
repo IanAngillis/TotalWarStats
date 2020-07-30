@@ -6,3 +6,4 @@ C:\Users\Ian\source\repos\TotalWarStats\TotalWarStats.Model\obj\Debug\netstandar
 C:\Users\Ian\source\repos\TotalWarStats\TotalWarStats.Model\obj\Debug\netstandard2.0\TotalWarStats.Model.csproj.CoreCompileInputs.cache
 C:\Users\Ian\source\repos\TotalWarStats\TotalWarStats.Model\obj\Debug\netstandard2.0\TotalWarStats.Model.dll
 C:\Users\Ian\source\repos\TotalWarStats\TotalWarStats.Model\obj\Debug\netstandard2.0\TotalWarStats.Model.pdb
+C:\Users\Ian\source\repos\TotalWarStats\TotalWarStats.Model\obj\Debug\netstandard2.0\TotalWarStats.Model.csprojAssemblyReference.cache

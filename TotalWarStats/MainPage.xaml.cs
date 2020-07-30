@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using TotalWarStats.Business.Interfaces;
 using TotalWarStats.Business.Services;
 using TotalWarStats.Model.Entities;
+using TotalWarStats.Model.Utils;
+using TotalWarStats.Views;
 using Windows.UI.Xaml.Controls;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
@@ -12,30 +14,33 @@ namespace TotalWarStats
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
+    /// 
     public sealed partial class MainPage : Page
     {
+        private string _currentFrame;
+
         public MainPage()
         {
             this.InitializeComponent();
-            IMatchService matchService = new MatchService();
-            IList<Match> matches = matchService.GetAllMatchesAsync().Result;
-            Match match = matches[0];
-            matchService.DeleteMatchAsync(match.MatchId).Wait();
-            matches = matchService.GetAllMatchesAsync().Result;
-            DisplayDataDialog(matches.Count);
-
+            InitializeView();
         }
 
-        private async void DisplayDataDialog(int count)
+        private void InitializeView()
         {
-            ContentDialog noWifiDialog = new ContentDialog
-            {
-                Title = "MATCHES IN DB",
-                Content = count + "",
-                CloseButtonText = "Ok"
-            };
+            NavigationView.ItemInvoked += NavigationView_ItemInvoked;
+            contentFrame.Navigate(typeof(MatchView));
+            _currentFrame = NavigationViewItemConstants.Match;
+        }
 
-            await noWifiDialog.ShowAsync();
+        private void NavigationView_ItemInvoked(NavigationView sender, NavigationViewItemInvokedEventArgs args)
+        {
+            if (args.InvokedItem.Equals(_currentFrame)) return;
+            if (args.IsSettingsInvoked) contentFrame.Navigate(typeof(SettingsView));
+            if (args.InvokedItem.Equals(NavigationViewItemConstants.Match)) contentFrame.Navigate(typeof(MatchView));
+            if (args.InvokedItem.Equals(NavigationViewItemConstants.Matchups)) contentFrame.Navigate(typeof(MatchupsView));
+            if (args.InvokedItem.Equals(NavigationViewItemConstants.MatchHistory)) contentFrame.Navigate(typeof(MatchHistoryView));
+
+            _currentFrame = args.InvokedItem.ToString();
         }
     }
 }

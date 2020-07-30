@@ -4,11 +4,20 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:TotalWarStats"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:muxc="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <Grid>
+            <muxc:NavigationView x:Name="NavigationView">
+                <muxc:NavigationView.MenuItems>
+                    <muxc:NavigationViewItem Icon="Save" Content="Matchresult" Tag="SamplePage1" />
+                    <muxc:NavigationViewItem Icon="Save" Content="Matchups" Tag="SamplePage2" />
+                    <muxc:NavigationViewItem Icon="Save" Content="History" Tag="SamplePage3" />
+                </muxc:NavigationView.MenuItems>
+                <Frame x:Name="contentFrame"/>
+            </muxc:NavigationView>
+        </Grid>
     </Grid>
 </Page>
