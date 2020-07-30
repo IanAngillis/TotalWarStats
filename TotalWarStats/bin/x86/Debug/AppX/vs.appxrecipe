@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\Ian\source\repos\TotalWarStats\TotalWarStats\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-07-29T23:26:57.793</Modified>
+      <Modified>2020-07-30T08:57:35.501</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Ian\source\repos\TotalWarStats\TotalWarStats\bin\x86\Debug\TotalWarStats.exe">
       <PackagePath>entrypoint\TotalWarStats.exe</PackagePath>
-      <Modified>2020-07-29T23:26:57.429</Modified>
+      <Modified>2020-07-30T08:57:35.137</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ian\.nuget\packages\microsoft.bcl.asyncinterfaces\1.1.1\lib\netstandard2.0\Microsoft.Bcl.AsyncInterfaces.dll">
       <PackagePath>Microsoft.Bcl.AsyncInterfaces.dll</PackagePath>
@@ -160,7 +160,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ian\source\repos\TotalWarStats\TotalWarStats.Business\bin\Debug\netstandard2.0\TotalWarStats.Business.dll">
       <PackagePath>TotalWarStats.Business.dll</PackagePath>
-      <Modified>2020-07-29T23:21:32.197</Modified>
+      <Modified>2020-07-30T08:55:10.463</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ian\source\repos\TotalWarStats\TotalWarStats.Data\bin\Debug\netstandard2.0\TotalWarStats.Data.dll">
       <PackagePath>TotalWarStats.Data.dll</PackagePath>
@@ -214,11 +214,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ian\source\repos\TotalWarStats\TotalWarStats\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-07-29T23:26:57.281</Modified>
+      <Modified>2020-07-30T08:57:34.981</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ian\source\repos\TotalWarStats\TotalWarStats\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-07-29T23:26:57.281</Modified>
+      <Modified>2020-07-30T08:57:34.981</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17134.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -226,11 +226,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ian\source\repos\TotalWarStats\TotalWarStats\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-07-29T23:21:38.006</Modified>
+      <Modified>2020-07-29T23:34:02.462</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ian\source\repos\TotalWarStats\TotalWarStats\bin\x86\Debug\Core\TotalWarStats.exe">
       <PackagePath>TotalWarStats.exe</PackagePath>
-      <Modified>2020-07-29T23:26:57.789</Modified>
+      <Modified>2020-07-30T08:57:35.497</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

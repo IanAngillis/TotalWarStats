@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using TotalWarStats.Business.Repositories;
+using TotalWarStats.Business.Services;
 using TotalWarStats.Data.Context;
 using TotalWarStats.Model.Entities;
 using Windows.ApplicationModel;
@@ -36,16 +38,6 @@ namespace TotalWarStats
             using(TotalWarStatsContext context = new TotalWarStatsContext())
             {
                 context.Database.Migrate();
-
-                context.Matches.Add(new Match
-                {
-                    MatchId = Guid.NewGuid().ToString(),
-                    PlayerFaction = "Beastmen",
-                    OpponentFaction = "Brettonia",
-                    HasWon = true
-                });
-
-                context.SaveChanges();
             }
         }
 

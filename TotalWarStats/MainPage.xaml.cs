@@ -1,20 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using System.Text.RegularExpressions;
-using TotalWarStats.Data.Context;
+using TotalWarStats.Business.Interfaces;
+using TotalWarStats.Business.Services;
 using TotalWarStats.Model.Entities;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -28,12 +17,13 @@ namespace TotalWarStats
         public MainPage()
         {
             this.InitializeComponent();
+            IMatchService matchService = new MatchService();
+            IList<Match> matches = matchService.GetAllMatchesAsync().Result;
+            Match match = matches[0];
+            matchService.DeleteMatchAsync(match.MatchId).Wait();
+            matches = matchService.GetAllMatchesAsync().Result;
+            DisplayDataDialog(matches.Count);
 
-            using(TotalWarStatsContext context = new TotalWarStatsContext())
-            {
-                IList<Model.Entities.Match> matches = context.Matches.ToList();
-                DisplayDataDialog(matches.Count);
-            }
         }
 
         private async void DisplayDataDialog(int count)
@@ -45,7 +35,7 @@ namespace TotalWarStats
                 CloseButtonText = "Ok"
             };
 
-            ContentDialogResult result = await noWifiDialog.ShowAsync();
+            await noWifiDialog.ShowAsync();
         }
     }
 }
